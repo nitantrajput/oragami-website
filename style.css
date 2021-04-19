@@ -1,0 +1,68 @@
+/*head,body,p,a,h1,h2,title
+. - class selector
+* - universal slector
+
+color: red,green,
+rgb( , , ,)- 0-255
+hexadecimal-16===> 0-9 A-E
+
+10 - decimal number system - 0 to 9
+2 - binary - 0 & 1
+
+rgb(10,10,10) == 10/16 -Q= 0 R=10(A)
+10 in rgb is 0A in hexadecimal
+rgb(10) = #0A
+*/
+body{
+   
+    background-image: url("https://twocitieschurch.net/wp-content/uploads/2018/03/Easter-website-bg.jpg");
+}
+h1{
+    color: rgba(92, 2, 2, 0.986);
+    margin-left: 50px;
+    border:solid ;
+    padding: 20px;
+}
+.game{
+    color: rgb(226, 241, 10);
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.header{
+    background-color: "lime";
+    display : flex;
+    justify-content: space-between;
+}
+a:link{
+    color:black;
+}
+a:visited{
+    color:black;
+}
+.box1{
+    text-align: center;
+}
+/**/
+.game{
+    position:relative;
+}
+.game p{
+    position:absolute;
+    top : 30%;
+    left:30%;
+    transform:translate(50%,50%);
+    opacity:0;
+}
+
+.game:hover p{
+    opacity:1
+}
+.game:hover img{
+    opacity:0.2
+}
+.bbox{
+    text-align:center;
+    font-size: 30px;
+}
